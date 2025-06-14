@@ -15,6 +15,7 @@ pipeline {
     stage('Build') {
       steps {
         echo "Building for ${params.BRANCH_TO_BUILD} environment..."
+        error('Simulated build failure')
         // Example: sh 'make build'
       }
     }
